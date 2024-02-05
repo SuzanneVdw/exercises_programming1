@@ -43,8 +43,6 @@ It allows you to type in Python commands, which are then executed on the spot.
 
 You can launch the Python shell from the "regular" shell using `py`, `python` or `python3`, depending on your OS.
 
-:::code{caption="Shell"}
-
 ```python
 $ py
 Python 3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)] on win32
