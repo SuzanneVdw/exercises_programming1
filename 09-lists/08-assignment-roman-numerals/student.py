@@ -23,9 +23,18 @@ def to_roman(n):
 
 def from_roman(string):
     final_number = 0
-    for i in string:
-        #TO BE IMPLEMENTED
-        pass
+    skipped_letters = []
+    for i in range(0,len(string)-1):
+        for j in conversion_table:
+            if string[i] + string[i+1] == j[0]:
+                final_number += j[1]
+                skipped_letters.append(i)
+                skipped_letters.append(i+1)
+    for i in range(0,len(string)):
+        if i in skipped_letters:
+            pass
+        else:
+            for k in conversion_table:
+                if string[i] == k[0]:
+                    final_number += k[1]
     return final_number
-
-print(from_roman('MCMLXXXIV'))
